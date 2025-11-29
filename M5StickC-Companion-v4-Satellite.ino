@@ -112,14 +112,14 @@ enum DisplayMode {
   DISPLAY_BITMAP = 0,
   DISPLAY_TEXT   = 1
 };
-int displayMode = DISPLAY_BITMAP; // default
+int displayMode = DISPLAY_TEXT; // default
 
 // WiFiManager custom params
 WiFiManagerParameter* custom_companionIP;
 WiFiManagerParameter* custom_companionPort;
 WiFiManagerParameter* custom_displayMode;
 WiFiManagerParameter* custom_rotation = nullptr;   // rotation parameter
-int screenRotation = 0;  // 0 = 0°, 1 = 90°, 2 = 180°, 3 = 270° (TEXT mode only)
+int screenRotation = 90;  // 0 = 0°, 1 = 90°, 2 = 180°, 3 = 270° (TEXT mode only)
 
 // TEXT mode pressed-border flag (yellow outline when button pressed)
 bool textPressedBorder = false;
