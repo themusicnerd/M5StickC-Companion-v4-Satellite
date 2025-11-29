@@ -53,10 +53,10 @@
     defined(ARDUINO_M5STACK_M5STICKC_PLUS) || \
     defined(ARDUINO_M5STICKC_PLUS)
 // Landscape with USB/power button on the right
-const int DEFAULT_BITMAP_ROTATION = 3;
+const int DEFAULT_BITMAP_ROTATION = 1;
 #else
 // Fallback (if compiled for some other ESP32 board)
-const int DEFAULT_BITMAP_ROTATION = 0;
+const int DEFAULT_BITMAP_ROTATION = 1;
 #endif
 
 // ------------------------------------------------------------
